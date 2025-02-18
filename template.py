@@ -22,6 +22,7 @@ list_of_files = [
     'requirements.txt',
     '.gitignore',
     'Readme.md',
+    'setup.py',
     'Dockerfile'  # Ensure this is treated as a file, not a directory
 ]
 
