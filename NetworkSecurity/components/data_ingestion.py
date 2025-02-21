@@ -102,7 +102,7 @@ class DataIngestion:
             dataframe=self.export_data_into_feature_store(dataframe)
             self.train_test_split_df(dataframe)
             dataingestionartifact=DataIngestionArtifact(
-                trained_filepath=self.data_ingestion_config.train_file_path,
+                train_filepath=self.data_ingestion_config.train_file_path,
                 test_filepath=self.data_ingestion_config.test_file_path
             )
             return dataingestionartifact
