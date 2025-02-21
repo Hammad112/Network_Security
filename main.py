@@ -27,6 +27,7 @@ if __name__=='__main__':
         logging.info("Intiating Data Validation ")
         data_validation_Artifact=data_validation.intiate_data_validation()
         logging.info("Data Validation Completed ")
+        print(data_validation_Artifact)
 
         ## Data Transformation
 

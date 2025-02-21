@@ -36,18 +36,18 @@ class DataValidation:
             raise NetworkSecurityException (e,sys)
 
     ## Comparing Actual dataset Columns with splitted dataset columns
-    def Validate_Columns(self,dataframe:pd.DataFrame)->bool:
+    def Validate_Columns(self, dataframe: pd.DataFrame) -> bool:
         try:
-            numer_of_columns=len(self._schema_config)
-            logging.info(f"Required number of columns - {numer_of_columns}")
+            num_of_columns = len(self._schema_config.get("columns", {}))  # Fix here
+            logging.info(f"Required number of columns - {num_of_columns}")
             logging.info(f"Dataframe in columns - {len(dataframe.columns)}")
-            if len(dataframe.columns)==numer_of_columns:
-                return True
-            else:
-                return False
-    
+
+            return len(dataframe.columns) == num_of_columns
+        
         except Exception as e:
-            raise NetworkSecurityException (e,sys)
+            raise NetworkSecurityException(e, sys)
+    
+
 
     ## Validate Numerical Column
     def Validate_Numerical_Columns(self, dataframe: pd.DataFrame) -> bool:
@@ -69,7 +69,7 @@ class DataValidation:
         try:
             status=True
             report={}
-            for columns in base_df.columns:
+            for column in base_df.columns:
                 d1=base_df[column]
                 d2=current_df[column]
                 is_smaple_dit_same_not=ks_2samp(d1,d2)
@@ -85,9 +85,14 @@ class DataValidation:
                         'drift_status':isfound
                     }
                 })
-                drif_report_file_path=self.data_validation_config.data_drift_file_path
-                os.makedirs(drif_report_file_path,exist_ok=True)
-                write_yaml(file_path=drif_report_file_path,content=report)
+
+                drift_report_file_path=self.data_validation_config.data_drift_file_path
+                
+                print(drift_report_file_path)
+                ## Creating Directory
+                dir_path = os.path.dirname(drift_report_file_path)
+                os.makedirs(dir_path,exist_ok=True)
+                write_yaml(file_path=drift_report_file_path,content=report)
                 
        
         except Exception as e:
@@ -107,33 +112,33 @@ class DataValidation:
 
             ## Validate Number of Columns
             ## Train
-            status_train=self.Validate_Columns(dataframe=train_dataframe)
+            status=self.Validate_Columns(dataframe=train_dataframe)
             
-            if not status_train:
+            if not status:
                 return f' Train dataframe does not contain all columns'
 
             ## Test
             
-            status_test=self.Validate_Columns(dataframe=test_dataframe)
+            status=self.Validate_Columns(dataframe=test_dataframe)
             
-            if not status_test:
-                return f'{error_message} Train dataframe does not contain all columns'
+            if not status:
+                return f' Train dataframe does not contain all columns'
 
    
             ## Numerical Columns Exists or not
             num_col_train=self.Validate_Numerical_Columns(dataframe=train_dataframe)
             if not num_col_train:
-                return f'{error_message} Train dataframe does not contain Numerical columns'
+                return f'Train dataframe does not contain Numerical columns'
 
            
 
             num_col_test=self.Validate_Numerical_Columns(dataframe=test_dataframe)
             if not num_col_test:
-                return f'Train dataframe  contain Nuumerical columns'
+                return f'Train dataframe  contain Numerical columns'
 
             ## Data Drift
             status=self.Detect_Drift(base_df=train_dataframe,current_df=test_dataframe)
-            os_path=os.path.dirname(self.DataValidationConfig.valid_train_file_path)
+            dir_path=os.path.dirname(self.data_validation_config.valid_train_file_path)
             os.makedirs(dir_path,exist_ok=True)
 
             train_dataframe.to_csv(
@@ -151,12 +156,10 @@ class DataValidation:
                 valid_test_file_path=self.data_ingestion_artifact.test_filepath,
                 invalid_train_file_path=None,
                 invalid_test_file_path=None,
-                drif_report_file_path=self.data_validation_config.drif_report_file_path
+                data_drift_file_path=self.data_validation_config.data_drift_file_path,
 
             )
-
-
-
+            return data_validation_artifact
 
         except Exception as e:
             raise NetworkSecurityException(e,sys)
