@@ -1,0 +1,14 @@
+2025-02-22 21:14:15,381 - INFO - Intitate data ingestion
+2025-02-22 21:14:59,189 - INFO - Performed train test split on Data Frame
+2025-02-22 21:14:59,189 - INFO - Exited Split data as Train sets and test sets method of Data_Ingestion class
+2025-02-22 21:14:59,189 - INFO - Exporting train and test file path
+2025-02-22 21:14:59,372 - INFO - Exported Train and Test File Path
+2025-02-22 21:14:59,373 - INFO - Data Ingestion Completed
+2025-02-22 21:14:59,380 - INFO - Intiating Data Validation 
+2025-02-22 21:14:59,454 - INFO - Required number of columns - 31
+2025-02-22 21:14:59,454 - INFO - Dataframe in columns - 31
+2025-02-22 21:14:59,455 - INFO - Required number of columns - 31
+2025-02-22 21:14:59,455 - INFO - Dataframe in columns - 31
+2025-02-22 21:14:59,457 - INFO - Numerical columns exist in the dataframe.
+2025-02-22 21:14:59,458 - INFO - Numerical columns exist in the dataframe.
+2025-02-22 21:15:00,181 - INFO - Data Validation Completed 

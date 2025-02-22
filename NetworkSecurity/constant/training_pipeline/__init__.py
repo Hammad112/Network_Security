@@ -29,3 +29,16 @@ VALID_VALIDATION_DATA_DIR:str='Validated'
 INVALID_VALIDATION_DATA_DIR:str='Invalid'
 DATA_VALIDATION_DRIFT_REPORT_DIR:str='drift_report'
 DATA_VALIDATION_DRIFT_REPORT_FILE:str='drift_report.yaml'
+
+## Data Transformation
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR:str='transformed'
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR:str='transformed_object'
+DATA_TRANSFORMATION_DIR_NAME='data_transformation'
+PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
+
+## KNN Imputer to Replace NAN Value
+DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
+    'missing_values': np.nan,
+    'n_neighbors': 3,  # Correct spelling
+    'weights': 'uniform',
+}
