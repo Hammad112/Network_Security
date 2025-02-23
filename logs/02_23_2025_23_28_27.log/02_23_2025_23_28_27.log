@@ -1,0 +1,37 @@
+2025-02-23 23:28:34,340 - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-02-23 23:28:34,349 - INFO - Accessing as Hammad112
+2025-02-23 23:28:35,294 - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Hammad112/Network_Security "HTTP/1.1 200 OK"
+2025-02-23 23:28:36,706 - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-02-23 23:28:36,709 - INFO - Initialized MLflow to track repo "Hammad112/Network_Security"
+2025-02-23 23:28:36,710 - INFO - Repository Hammad112/Network_Security initialized!
+2025-02-23 23:28:36,711 - INFO - Intitate data ingestion
+2025-02-23 23:28:45,991 - INFO - Performed train test split on Data Frame
+2025-02-23 23:28:45,991 - INFO - Exited Split data as Train sets and test sets method of Data_Ingestion class
+2025-02-23 23:28:45,992 - INFO - Exporting train and test file path
+2025-02-23 23:28:46,183 - INFO - Exported Train and Test File Path
+2025-02-23 23:28:46,185 - INFO - Data Ingestion Completed
+2025-02-23 23:28:46,193 - INFO - Intiating Data Validation 
+2025-02-23 23:28:46,269 - INFO - Required number of columns - 31
+2025-02-23 23:28:46,269 - INFO - Dataframe in columns - 31
+2025-02-23 23:28:46,269 - INFO - Required number of columns - 31
+2025-02-23 23:28:46,270 - INFO - Dataframe in columns - 31
+2025-02-23 23:28:46,272 - INFO - Numerical columns exist in the dataframe.
+2025-02-23 23:28:46,273 - INFO - Numerical columns exist in the dataframe.
+2025-02-23 23:28:47,078 - INFO - Data Validation Completed 
+2025-02-23 23:28:47,079 - INFO - Intiating Data Transformation
+2025-02-23 23:28:47,079 - INFO - Starting Data Transformation
+2025-02-23 23:28:47,160 - INFO - Entered get_data_tranformed_object 
+2025-02-23 23:28:47,183 - INFO - Entered the save model method of MainUtils class
+2025-02-23 23:28:47,197 - INFO - Exited the save object method od Main utils class
+2025-02-23 23:28:47,197 - INFO - Entered the save model method of MainUtils class
+2025-02-23 23:28:47,201 - INFO - Exited the save object method od Main utils class
+2025-02-23 23:28:47,204 - INFO - Data Transformation Completed
+2025-02-23 23:28:47,204 - INFO - Intiating Data Transformation
+2025-02-23 23:28:57,244 - INFO - Best Model Found on both training and testing dataset
+2025-02-23 23:29:09,288 - INFO - Best Model Found on both training and testing dataset
+2025-02-23 23:29:19,262 - INFO - Entered the save model method of MainUtils class
+2025-02-23 23:29:19,291 - INFO - Exited the save object method od Main utils class
+2025-02-23 23:29:19,292 - INFO - Entered the save model method of MainUtils class
+2025-02-23 23:29:19,322 - INFO - Exited the save object method od Main utils class
+2025-02-23 23:29:19,322 - INFO - Model Trainer Artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\02_23_2025\\Model Trainer\\Trained Model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9911190053285968, precision_score=0.9893617021276596, recall_score=0.9928825622775801), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9873417721518988, precision_score=0.9835868694955965, recall_score=0.991125453812021))
+2025-02-23 23:29:19,327 - INFO - Data Transformation Completed

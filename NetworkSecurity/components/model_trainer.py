@@ -27,6 +27,7 @@ dagshub.init(repo_owner='Hammad112', repo_name='Network_Security', mlflow=True)
 
 
 
+
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
         try:
@@ -79,6 +80,7 @@ class ModelTrainer:
              ]
 
             best_model=models[best_model_name]
+
             y_train_pred=best_model.predict(x_train)
             
             train_model_score=get_classification_score(y_actual=y_train,y_pred=y_train_pred)
@@ -90,6 +92,14 @@ class ModelTrainer:
             self.track_mlflow(best_model_name,train_model_score)
 
             ## Test Set
+
+            logging.info(f"Best Model Found on both training and testing dataset")
+
+            y_train_pred=best_model.predict(x_train)
+
+            train_model_score=get_classification_score(y_actual=y_train,y_pred=y_train_pred)
+            ## Track Model
+
             y_test_pred=best_model.predict(x_test)
 
             test_model_score=get_classification_score(y_actual=y_test,y_pred=y_test_pred)
@@ -138,6 +148,7 @@ class ModelTrainer:
             ## Loading train and test file path
             train_file_path=self.data_transformation_artifact.transformed_train_file_path
             test_file_path=self.data_transformation_artifact.transformed_test_file_path
+
 
             ## Loading Train and Test Numpy Array
             train_array=load_numpy_array(train_file_path)
