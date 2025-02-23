@@ -1,0 +1,21 @@
+2025-02-23 22:05:28,163 - INFO - Intitate data ingestion
+2025-02-23 22:05:38,138 - INFO - Performed train test split on Data Frame
+2025-02-23 22:05:38,138 - INFO - Exited Split data as Train sets and test sets method of Data_Ingestion class
+2025-02-23 22:05:38,138 - INFO - Exporting train and test file path
+2025-02-23 22:05:38,333 - INFO - Exported Train and Test File Path
+2025-02-23 22:05:38,334 - INFO - Data Ingestion Completed
+2025-02-23 22:05:38,342 - INFO - Intiating Data Validation 
+2025-02-23 22:05:38,428 - INFO - Required number of columns - 31
+2025-02-23 22:05:38,429 - INFO - Dataframe in columns - 31
+2025-02-23 22:05:38,429 - INFO - Required number of columns - 31
+2025-02-23 22:05:38,429 - INFO - Dataframe in columns - 31
+2025-02-23 22:05:38,432 - INFO - Numerical columns exist in the dataframe.
+2025-02-23 22:05:38,433 - INFO - Numerical columns exist in the dataframe.
+2025-02-23 22:05:39,296 - INFO - Data Validation Completed 
+2025-02-23 22:05:39,296 - INFO - Intiating Data Transformation
+2025-02-23 22:05:39,296 - INFO - Starting Data Transformation
+2025-02-23 22:05:39,414 - INFO - Entered get_data_tranformed_object 
+2025-02-23 22:05:39,440 - INFO - Entered the save model method of MainUtils class
+2025-02-23 22:05:39,445 - INFO - Exited the save object method od Main utils class
+2025-02-23 22:05:39,449 - INFO - Data Transformation Completed
+2025-02-23 22:05:39,450 - INFO - Intiating Data Transformation
