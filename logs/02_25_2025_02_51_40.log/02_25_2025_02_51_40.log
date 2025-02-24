@@ -1,0 +1,6 @@
+2025-02-25 02:51:49,891 - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-02-25 02:51:49,933 - INFO - Accessing as Hammad112
+2025-02-25 02:51:51,444 - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Hammad112/Network_Security "HTTP/1.1 200 OK"
+2025-02-25 02:51:52,512 - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-02-25 02:51:52,517 - INFO - Initialized MLflow to track repo "Hammad112/Network_Security"
+2025-02-25 02:51:52,518 - INFO - Repository Hammad112/Network_Security initialized!

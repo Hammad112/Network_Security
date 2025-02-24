@@ -21,7 +21,7 @@ class NetworkModel:
     
     def predict(self,x):
         try:
-            x_transformed=self.preprocessor.transform()
+            x_transformed=self.preprocessor.transform(x)
             y_hat=self.model.predict(x_transformed)
             return y_hat
 

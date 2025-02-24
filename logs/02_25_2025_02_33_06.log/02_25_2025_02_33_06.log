@@ -1,0 +1,62 @@
+2025-02-25 02:33:16,604 - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-02-25 02:33:16,617 - INFO - Accessing as Hammad112
+2025-02-25 02:33:17,657 - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Hammad112/Network_Security "HTTP/1.1 200 OK"
+2025-02-25 02:33:18,506 - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-02-25 02:33:18,511 - INFO - Initialized MLflow to track repo "Hammad112/Network_Security"
+2025-02-25 02:33:18,513 - INFO - Repository Hammad112/Network_Security initialized!
+2025-02-25 02:33:19,748 - INFO - Data Ingestion Started
+2025-02-25 02:33:48,519 - INFO - Performed train test split on Data Frame
+2025-02-25 02:33:48,519 - INFO - Exited Split data as Train sets and test sets method of Data_Ingestion class
+2025-02-25 02:33:48,520 - INFO - Exporting train and test file path
+2025-02-25 02:33:48,793 - INFO - Exported Train and Test File Path
+2025-02-25 02:33:48,795 - INFO - Data Ingestion Completed DataIngestionArtifact(train_filepath='Artifacts\\02_25_2025\\data_ingestion\\data_ingestion\\train.csv', test_filepath='Artifacts\\02_25_2025\\data_ingestion\\data_ingestion\\test.csv')
+2025-02-25 02:33:48,805 - INFO - Intiating Data Validation 
+2025-02-25 02:33:48,901 - INFO - Required number of columns - 31
+2025-02-25 02:33:48,902 - INFO - Dataframe in columns - 31
+2025-02-25 02:33:48,902 - INFO - Required number of columns - 31
+2025-02-25 02:33:48,902 - INFO - Dataframe in columns - 31
+2025-02-25 02:33:48,906 - INFO - Numerical columns exist in the dataframe.
+2025-02-25 02:33:48,907 - INFO - Numerical columns exist in the dataframe.
+2025-02-25 02:33:50,105 - INFO - Data Validation Completed 
+2025-02-25 02:33:50,105 - INFO - Intiating Data Transformation
+2025-02-25 02:33:50,105 - INFO - Starting Data Transformation
+2025-02-25 02:33:50,189 - INFO - Entered get_data_tranformed_object 
+2025-02-25 02:33:50,212 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:33:50,217 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:33:50,217 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:33:50,222 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:33:50,224 - INFO - Data Transformation Completed
+2025-02-25 02:34:04,492 - INFO - Best Model Found: Random Forest
+2025-02-25 02:34:49,165 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:34:49,202 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:34:49,202 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:34:49,244 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:34:49,244 - INFO - Model Saved at: Artifacts\02_25_2025\Model Trainer\Trained Model\model.pkl
+2025-02-25 02:35:43,215 - INFO - Data Ingestion Started
+2025-02-25 02:36:05,584 - INFO - Performed train test split on Data Frame
+2025-02-25 02:36:05,584 - INFO - Exited Split data as Train sets and test sets method of Data_Ingestion class
+2025-02-25 02:36:05,584 - INFO - Exporting train and test file path
+2025-02-25 02:36:05,990 - INFO - Exported Train and Test File Path
+2025-02-25 02:36:05,991 - INFO - Data Ingestion Completed DataIngestionArtifact(train_filepath='Artifacts\\02_25_2025\\data_ingestion\\data_ingestion\\train.csv', test_filepath='Artifacts\\02_25_2025\\data_ingestion\\data_ingestion\\test.csv')
+2025-02-25 02:36:06,017 - INFO - Intiating Data Validation 
+2025-02-25 02:36:06,155 - INFO - Required number of columns - 31
+2025-02-25 02:36:06,155 - INFO - Dataframe in columns - 31
+2025-02-25 02:36:06,155 - INFO - Required number of columns - 31
+2025-02-25 02:36:06,156 - INFO - Dataframe in columns - 31
+2025-02-25 02:36:06,158 - INFO - Numerical columns exist in the dataframe.
+2025-02-25 02:36:06,159 - INFO - Numerical columns exist in the dataframe.
+2025-02-25 02:36:08,050 - INFO - Data Validation Completed 
+2025-02-25 02:36:08,051 - INFO - Intiating Data Transformation
+2025-02-25 02:36:08,051 - INFO - Starting Data Transformation
+2025-02-25 02:36:08,204 - INFO - Entered get_data_tranformed_object 
+2025-02-25 02:36:08,258 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:36:08,265 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:36:08,265 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:36:08,272 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:36:08,277 - INFO - Data Transformation Completed
+2025-02-25 02:36:28,825 - INFO - Best Model Found: Random Forest
+2025-02-25 02:37:16,845 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:37:16,882 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:37:16,883 - INFO - Entered the save model method of MainUtils class
+2025-02-25 02:37:16,923 - INFO - Exited the save object method od Main utils class
+2025-02-25 02:37:16,924 - INFO - Model Saved at: Artifacts\02_25_2025\Model Trainer\Trained Model\model.pkl
